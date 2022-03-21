@@ -8,9 +8,25 @@
 }
 
 
+@font-face {
+    font-family: 'BioRhyme';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../fonts/biorhyme.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Courier P';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../fonts/courier_prime.woff2) format('woff2');
+  }
+
+
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier P', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    /* font: optional; */
     overflow-x: hidden;
     background-color: var(--light);
     color: var(--darker);
@@ -58,7 +74,8 @@ article{
 }
 
 article h2{
-    background-color: var(--lighter);
+    background-color: var(--middle);
+    color: var(--light);
     border-radius: 6px;
     padding: 6px;
 }
