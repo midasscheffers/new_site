@@ -102,6 +102,7 @@ a{
     text-decoration: none;
 }
 
+
 article{
     margin-top: 20px;
     /* background-color: var(--lighter);
@@ -115,23 +116,31 @@ article{
 #headshot {
     border-radius: 100%;
     width: 40%;
-    display: block;
 }
+
 #headshot_inline{
     border-radius: 100%;
-    width: 10%;
-    display: inline;
+    width: 200px;
 }
 
 
-header{
-    background-color: var(--middle);
-    color: var(--light);
+header:not([class]){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    text-align: center;
 }
 
-header h1{
-    color: var(--light);
+header:not([class]) > *{
+    flex: 0 1 33%;
 }
+
+header:not([class]) > h1{
+    margin: 20px;
+}
+
 
 article h2{
     /* background-color: var(--middle);
@@ -141,6 +150,11 @@ article h2{
 }
 
 article p{
+    margin: 10px;
+}
+
+article p img{
+    float: left;
     margin: 10px;
 }
 
@@ -186,7 +200,9 @@ header.landing_head a{
     color: var(--light);
 }
 
-
+middle h2{
+    margin-top: 10px;
+}
 
 
 
